@@ -1,7 +1,7 @@
 #!/bin/sh
-#/home/ec2-user/apache-tomcat-8.0.35/bin/catalina.sh stop
+ssh ec2-user@52.37.160.105 <<EOF
 cd /home/ec2-user/apache-tomcat-8.0.35/webapps
 rm -rf helloWorld-0.1-dev.war
 sleep 10
-cp -rf /home/ec2-user/.jenkins/jobs/Hello_World/workspace/dist/helloWorld-0.1-dev.war .
-#/home/ec2-user/apache-tomcat-8.0.35/bin/catalina.sh start
+EOF
+scp -r /home/ec2-user/.jenkins/jobs/Hello_World/workspace/dist/helloWorld-0.1-dev.war ec2-user@52.37.160.105:/home/ec2-user/apache-tomcat-8.0.35/webapps
