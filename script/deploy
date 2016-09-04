@@ -4,4 +4,4 @@ cd /home/ec2-user/apache-tomcat-8.0.35/webapps
 rm -rf helloWorld-0.1-dev.war
 sleep 10
 EOF
-scp -r /home/ec2-user/.jenkins/jobs/Hello_World/workspace/dist/helloWorld-0.1-dev.war ec2-user@52.37.160.105:/home/ec2-user/apache-tomcat-8.0.35/webapps
+scp -r /home/ec2-user/Jenkins/workspace/Hello_World/dist/helloWorld-0.1-dev.war ec2-user@52.37.160.105:/home/ec2-user/apache-tomcat-8.0.35/webapps
