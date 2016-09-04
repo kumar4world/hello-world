@@ -3,5 +3,5 @@ cd /home/ec2-user/apache-tomcat-8.0.35/webapps
 rm -rf /home/ec2-user/.jenkins/jobs/Hello_World/workspace/dist/helloWorld-0.1-dev
 jar xvf /home/ec2-user/.jenkins/jobs/Hello_World/workspace/dist/helloWorld-0.1-dev.war
 /home/ec2-user/apache-tomcat-8.0.35/bin/catalina.sh stop
-wait 10
+sleep 10
 /home/ec2-user/apache-tomcat-8.0.35/bin/catalina.sh start
