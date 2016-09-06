@@ -17,7 +17,7 @@
   </table>
 
   <br />
-  <p> ~~~~ Hello Kumar welcome!!~~~~ This is the output of a JSP page that is part of the HelloWorld application....</p>
+  <p> ~~~~ Hello Kumar, how are you? ~~~~ This is the output of a JSP page that is part of the HelloWorld application....</p>
 
   <%= new String("Hello!") %>
 
